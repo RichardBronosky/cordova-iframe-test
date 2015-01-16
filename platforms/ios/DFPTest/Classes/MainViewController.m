@@ -121,9 +121,25 @@
     return [super webView:theWebView didFailLoadWithError:error];
 }
 
+/* Original Cordova version of this method */
+//- (BOOL) webView:(UIWebView*)theWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
+//{
+//    return [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
+//}
 - (BOOL) webView:(UIWebView*)theWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    return [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
+    //return [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
+  
+    BOOL shouldLoad = [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
+
+/* The initial fix attempt that works only when we know the URLs linked to in thirdparty ads */
+//    if ((navigationType == UIWebViewNavigationTypeLinkClicked || [[[request URL] absoluteString] hasPrefix:@"http://track.celtra"])
+//          && [[[request URL] absoluteString] hasPrefix:@"http"]) {
+//      [[UIApplication sharedApplication] openURL:[request URL]];
+//      return NO;
+//    }
+  
+    return shouldLoad;
 }
 
 @end
