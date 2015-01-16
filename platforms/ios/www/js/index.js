@@ -26,7 +26,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        //document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
     //
@@ -38,7 +38,7 @@ var app = {
             'adUnitId': 'www.ajc.com-handheld/homepage',
             'adSize': 'BANNER',
             'tags': {
-                "ad_slot": "HA02"
+                "ad_slot": "HA01"
             }
         };
         window.DFPPlugin.createBannerAd(options, function() {

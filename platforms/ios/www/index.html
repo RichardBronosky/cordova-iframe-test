@@ -40,9 +40,11 @@
     </head>
     <body>
         <div class="sanityCheck"></div>
-        <div class="adunit" data-adunit="www.ajc.com-handheld/homepage" data-targeting='{"ad_slot":"HA01"}' data-dimensions="320x50" style="margin-top:20px"></div>
+        <div class="sanityCheck"><iframe src="https://dl.dropboxusercontent.com/u/19682885/iframer/iframe.html"></iframe></div>
+        <div class="img" style="margin-top: 200px"><img src="http://media.cmgdigital.com/shared/media/2015-01-15-16-14-20/web/site/www_ajc_com/images/logo.png" /></div>
+        <!--div class="adunit" data-adunit="www.ajc.com-handheld/homepage" data-targeting='{"ad_slot":"HA03"}' data-dimensions="320x50,300x250" style="margin-top:20px"></div>
         <div class="adunit" data-adunit="www.ajc.com-handheld/homepage" data-targeting='{"ad_slot": "HA02"}' data-dimensions="320x50,300x250" style="margin-top:10px"></div>
-        <div class="adunit" data-adunit="www.ajc.com-handheld/Sports/Basketball" data-targeting='{"ad_slot": "HA02"}' data-dimensions="320x50,300x250" style="margin-top:10px"></div>
+        <div class="adunit" data-adunit="www.ajc.com-handheld/Sports/Basketball" data-targeting='{"ad_slot": "HA02"}' data-dimensions="320x50,300x250" style="margin-top:10px"></div-->
         
         <script>
             $.dfp({
@@ -51,10 +53,75 @@
             $(document).on('touchstart', '.sanityCheck', function() { 
                 console.log('SANITY CHECK!'); 
             });
-            $(document).on('touchstart', '.adunit', function() {
-                alert('iframer prep');
-                console.log('iframer failed to load as plugin'); 
+            $(document).on('touchstart', '.adunit', function(e) {
+                var x = e.originalEvent.touches[0].pageX;
+                var y = e.originalEvent.touches[0].pageY;
+                var ele = (document.elementFromPoint(x, y));
+                if (ele.id.indexOf('12523293') > -1 && window.iframer) {
+                    console.log('iframer click!');
+                    iframer.click();
+                }
             });
+            window.onbeforeunload = function(e) {
+                // If we haven't been passed the event get the window.event
+                e = e || window.event;
+
+                var message = 'Did it work?';
+
+                // For IE6-8 and Firefox prior to version 4
+                if (e) 
+                {
+                    e.returnValue = message;
+                }
+
+                // For Chrome, Safari, IE8+ and Opera 12+
+                return message;
+            };
+            window.onunload = function(e) {
+                // If we haven't been passed the event get the window.event
+                e = e || window.event;
+
+                var message = 'Did it work?';
+
+                // For IE6-8 and Firefox prior to version 4
+                if (e) 
+                {
+                    e.returnValue = message;
+                }
+
+                // For Chrome, Safari, IE8+ and Opera 12+
+                return message;
+            };
+            window.onpagehide = function(e) {
+                // If we haven't been passed the event get the window.event
+                e = e || window.event;
+
+                var message = 'Did it work?';
+
+                // For IE6-8 and Firefox prior to version 4
+                if (e) 
+                {
+                    e.returnValue = message;
+                }
+
+                // For Chrome, Safari, IE8+ and Opera 12+
+                return message;
+            };
+            window.pagehide = function(e) {
+                // If we haven't been passed the event get the window.event
+                e = e || window.event;
+
+                var message = 'Did it work?';
+
+                // For IE6-8 and Firefox prior to version 4
+                if (e) 
+                {
+                    e.returnValue = message;
+                }
+
+                // For Chrome, Safari, IE8+ and Opera 12+
+                return message;
+            };
         </script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

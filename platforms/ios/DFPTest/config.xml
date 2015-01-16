@@ -22,8 +22,8 @@
     <feature name="Iframer">
         <param name="ios-package" value="IframerPlugin" />
     </feature>
-    <feature name="DFPPlugin">
-        <param name="ios-package" value="DFPPlugin" />
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
     </feature>
     <name>DFPTest</name>
     <description>
@@ -34,7 +34,4 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
 </widget>

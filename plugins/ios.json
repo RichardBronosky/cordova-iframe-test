@@ -13,10 +13,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"DFPPlugin\"><param name=\"ios-package\" value=\"DFPPlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
                             "count": 1
                         }
@@ -25,87 +21,29 @@
             },
             "framework": {
                 "parents": {
-                    "Foundation.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ],
-                    "AdSupport.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ],
-                    "AudioToolbox.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ],
-                    "AVFoundation.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ],
-                    "CoreTelephony.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ],
-                    "MessageUI.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ],
-                    "StoreKit.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ],
-                    "SystemConfiguration.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ],
+                    "Foundation.framework": [],
+                    "AdSupport.framework": [],
+                    "AudioToolbox.framework": [],
+                    "AVFoundation.framework": [],
+                    "CoreTelephony.framework": [],
+                    "MessageUI.framework": [],
+                    "StoreKit.framework": [],
+                    "SystemConfiguration.framework": [],
                     "CoreGraphics.framework": [
                         {
                             "xml": "false",
-                            "count": 2
-                        }
-                    ],
-                    "AssetsLibrary.framework": [
-                        {
-                            "xml": "false",
                             "count": 1
                         }
                     ],
-                    "MobileCoreServices.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ],
-                    "CoreLocation.framework": [
-                        {
-                            "xml": "false",
-                            "count": 1
-                        }
-                    ]
+                    "AssetsLibrary.framework": [],
+                    "MobileCoreServices.framework": [],
+                    "CoreLocation.framework": []
                 }
             }
         }
     },
     "installed_plugins": {
         "com.danielcwilson.plugins.iframer": {
-            "PACKAGE_NAME": "com.danielcwilson.dfp.DFPTest"
-        },
-        "com.postmedia.DFPPlugin": {
             "PACKAGE_NAME": "com.danielcwilson.dfp.DFPTest"
         },
         "org.apache.cordova.inappbrowser": {

@@ -6,7 +6,6 @@
 	objectVersion = 46;
 	objects = {
 /* Begin PBXBuildFile section */
-		1AFE90294BD7401F91933DAB /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 831B664B740A469E932C52ED /* libGoogleAdMobAds.a */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -29,7 +28,6 @@
 		30B4F30219D5E07200D9F7D8 /* Default-Landscape-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B4F2FF19D5E07200D9F7D8 /* Default-Landscape-736h.png */; };
 		30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C1856519D5FC0A00212699 /* icon-60@3x.png */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
-		4CB6C153B9F344718815C173 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D148B90854B2B8BCFD472 /* StoreKit.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
 		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
@@ -41,17 +39,7 @@
 		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
-		8289D36B86E8455198F09D5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF629FEF41A248A9AB9CDD21 /* AVFoundation.framework */; };
-		B37E32E02D86447499B667D4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE4410E262C4F42A5D0AA1B /* AdSupport.framework */; };
-		B6AFEA063CCC43D2999D5038 /* DFPPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7BA8480C5C4D8EB1303A25 /* DFPPlugin.m */; };
-		C0E770F2867645B2840D4DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D842A1818CA470184816275 /* Foundation.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		D67EAAAF824A454FB34C45D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A990E443013455F9768A483 /* CoreLocation.framework */; };
-		DDE27A24C99E447994E13F41 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56C85CCD41140C6997B8182 /* CoreTelephony.framework */; };
-		E4959A601A684C3E00D5F469 /* libGoogleAdMobAds.a in Sources */ = {isa = PBXBuildFile; fileRef = 831B664B740A469E932C52ED /* libGoogleAdMobAds.a */; };
-		E9671D836D8440AF91F43C32 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEFE4709E1F4EC9AF635ABA /* AudioToolbox.framework */; };
-		F1C8261A84224BFBA9E341AB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E83417D7F045A79A753493 /* MessageUI.framework */; };
-		FF6A92976D5C4D0C80286C64 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD74BDDECDE46D2854D1B66 /* SystemConfiguration.framework */; };
 		4F95B048829B493C8059EDC8 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F8D51C64094EA2A98CE704 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
@@ -157,16 +145,6 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
-				1AFE90294BD7401F91933DAB /* libGoogleAdMobAds.a in Frameworks */,
-				C0E770F2867645B2840D4DB3 /* Foundation.framework in Frameworks */,
-				B37E32E02D86447499B667D4 /* AdSupport.framework in Frameworks */,
-				E9671D836D8440AF91F43C32 /* AudioToolbox.framework in Frameworks */,
-				8289D36B86E8455198F09D5D /* AVFoundation.framework in Frameworks */,
-				DDE27A24C99E447994E13F41 /* CoreTelephony.framework in Frameworks */,
-				F1C8261A84224BFBA9E341AB /* MessageUI.framework in Frameworks */,
-				4CB6C153B9F344718815C173 /* StoreKit.framework in Frameworks */,
-				FF6A92976D5C4D0C80286C64 /* SystemConfiguration.framework in Frameworks */,
-				D67EAAAF824A454FB34C45D0 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +448,6 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				29522BEED21C4F41A2486A42 /* IframerPlugin.m in Sources */,
-				B6AFEA063CCC43D2999D5038 /* DFPPlugin.m in Sources */,
 				4F95B048829B493C8059EDC8 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +479,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/DFPTest/Plugins/com.postmedia.DFPPlugin\"",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -535,7 +511,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/DFPTest/Plugins/com.postmedia.DFPPlugin\"",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
