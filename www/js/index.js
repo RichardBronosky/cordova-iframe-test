@@ -27,30 +27,6 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         //document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-        var options = {
-            'adUnitId': 'www.ajc.com-handheld/homepage',
-            'adSize': 'BANNER',
-            'tags': {
-                "ad_slot": "HA01"
-            }
-        };
-        window.DFPPlugin.createBannerAd(options, function() {
-            console.log('dfpplugin success');
-        },
-        function(error) {
-            console.log(error);
-        });
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        console.log('Received Event: ' + id);
     }
 };
 

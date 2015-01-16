@@ -42,26 +42,8 @@
         <div class="sanityCheck"></div>
         <div><iframe src="https://dl.dropboxusercontent.com/u/19682885/iframer/iframe.html"></iframe></div>
         <div class="img" style="margin-top: 200px"></div>
-        <!--div class="adunit" data-adunit="www.ajc.com-handheld/homepage" data-targeting='{"ad_slot":"HA03"}' data-dimensions="320x50,300x250" style="margin-top:20px"></div>
-        <div class="adunit" data-adunit="www.ajc.com-handheld/homepage" data-targeting='{"ad_slot": "HA02"}' data-dimensions="320x50,300x250" style="margin-top:10px"></div>
-        <div class="adunit" data-adunit="www.ajc.com-handheld/Sports/Basketball" data-targeting='{"ad_slot": "HA02"}' data-dimensions="320x50,300x250" style="margin-top:10px"></div-->
         
         <script>
-            $.dfp({
-                dfpID: '12523293'
-            });
-            $(document).on('touchstart', '.sanityCheck', function() { 
-                console.log('SANITY CHECK!'); 
-            });
-            $(document).on('touchstart', '.adunit', function(e) {
-                var x = e.originalEvent.touches[0].pageX;
-                var y = e.originalEvent.touches[0].pageY;
-                var ele = (document.elementFromPoint(x, y));
-                if (ele.id.indexOf('12523293') > -1 && window.iframer) {
-                    console.log('iframer click!');
-                    iframer.click();
-                }
-            });
             window.onbeforeunload = function(e) {
                 // If we haven't been passed the event get the window.event
                 e = e || window.event;
