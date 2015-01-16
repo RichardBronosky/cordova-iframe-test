@@ -7,7 +7,7 @@
 * put a breakpoint in Classes/MainViewController:shouldStartLoadWithRequest (line 128)
 * Run the app
 * The breakpoint will be hit a few times as the app launches (loading the main html file, loading the iframe, etc.)
-* Click on the first link and when the breakpoint hits, in the XCode output window type po navigationType (it should be "...Clicked")
+* Click on the first link and when the breakpoint hits, in the XCode output window type "po navigationType" (it should be "...Clicked")
 * The first link will open inside the iframe
 * Relaunch the app
 * Click the second link... in XCode "po navigationType" will still be "...Clicked" but the url will replace the app
