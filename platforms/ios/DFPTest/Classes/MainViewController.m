@@ -75,6 +75,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    // Add an observer that will respond to loginComplete
+    [[NSNotificationCenter defaultCenter] addObserver:self
+        selector:@selector(doOnTopNavigation:)
+        name:@"CDVPluginResetNotification" object:nil];
 }
 
 - (void)viewDidUnload
@@ -130,6 +134,7 @@
 {
     //return [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
   
+    NSLog(@"DEBUG: Method called - shouldStartLoadWithRequest");
     BOOL shouldLoad = [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
 
 /* The initial fix attempt that works only when we know the URLs linked to in thirdparty ads */
@@ -140,6 +145,10 @@
 //    }
   
     return shouldLoad;
+}
+
+- (void)doOnTopNavigation:(NSNotification *)note {
+     NSLog(@"DEBUG: Received Notification - CDVPluginResetNotification");
 }
 
 @end
